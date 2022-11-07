@@ -15,8 +15,10 @@ export const AddCategories = ( { onNewCategory } ) => {
     }
 
     return (
-        <form onSubmit={ onSubmit }>
-            <input type="text" placeholder="Buscar Gifs" value={inputValue}
+        <form onSubmit={ onSubmit } aria-label = "form">
+            <input type="text" 
+                placeholder="Buscar Gifs" 
+                value={inputValue}
                 onChange={onInputChance}
             />
         </form>
